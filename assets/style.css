@@ -1,0 +1,136 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  background:linear-gradient(120deg,#afd25e,#aae818);
+  height:100vh;
+  overflow:hidden;
+}
+
+.form-container{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  max-width:100%;
+  width:25rem;
+  background:#ffffff;
+  border-radius:.5rem;
+  padding:1.5rem 1rem;
+}
+
+.form-container form{
+  padding:0 2.5rem;
+}
+
+form .form-group{
+  position:relative;
+  margin:1.875rem 0;
+  border-bottom:2px solid #e1e1e1;
+}
+
+.form-group input{
+  width:100%;
+  padding:0 5px;
+  height:40px;
+  font-size:16px;
+  border:none;
+  background:none;
+  outline:none;
+}
+
+.form-group label{
+  position:absolute;
+  top:50%;
+  left:5px;
+  color:#adadad;
+  transform:translateY(-50%);
+  font-size:16px;
+  pointer-events:none;
+  transition: .5s;
+  display:flex;
+  align-items:center;
+}
+
+.form-group label > i{
+  margin-right:.375rem;
+  font-size:1rem;
+}
+
+.form-group span::before{
+  content:'';
+  position:absolute;
+  top:40px;
+  left:0;
+  height:2px;
+  width:0;
+  transition:.5s;
+  background:linear-gradient(120deg,#afd25e,#aae818);
+}
+
+.form-group input:focus ~ label,
+.form-group input:valid ~ label{
+  top:-5px;
+  color:#aae818;
+}
+
+.form-group input:focus ~ span::before,
+.form-group input:valid ~ span::before{
+  width:100%;
+}
+
+.fg-password{
+  cursor:pointer;
+  margin-bottom:1rem;
+}
+
+.fg-password a{
+  color:#ed4949;
+  text-decoration:none;
+  border-bottom:1px solid transparent;
+  transition:border-color .5s;
+  padding-bottom:.25rem;
+}
+
+.fg-password a:hover{
+  border-color:#ed4949;
+}
+
+input[type="submit"]{
+  width:100%;
+  height:50px;
+  border:1px solid #aae818;
+  background:#aae818;
+  font-size:18px;
+  color:#e9f4fb;
+  font-weight:700;
+  cursor:pointer;
+  outline:none;
+  border-radius:25px;
+}
+
+.signup{
+  margin:1rem 0;
+  text-align:center;
+  font-size:16px;
+  color:#313131;
+}
+
+.signup a{
+  color:#aae818;
+  text-decoration:none;
+  border-bottom:1px solid transparent;
+  transition:border-color .5s;
+  padding-bottom:.25rem;
+}
+
+.signup a:hover{
+  border-color:#aae818;
+}
+
+
+
+
